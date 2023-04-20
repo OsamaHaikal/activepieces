@@ -28,5 +28,10 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "yarn install",
 	"remoteUser": "root",
-	"postCreateCommand": "npm ci"
+	"postCreateCommand": "npm ci",
+    "features": {
+        "ghcr.io/devcontainers/features/sshd:1": {
+            "version": "latest"
+        }
+    }
 }
